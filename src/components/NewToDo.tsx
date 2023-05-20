@@ -42,7 +42,13 @@ function NewToDo({ todo, all, setToDos }: props) {
         }}
         ref={text}
       >
-        <Typography color="black">{todo.what}</Typography>
+        <Typography
+          color="black"
+          whiteSpace="normal"
+          style={{ wordBreak: "break-word" }}
+        >
+          {todo.what}
+        </Typography>
       </div>
       <Button
         variant="text"
